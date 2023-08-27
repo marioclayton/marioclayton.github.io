@@ -1,0 +1,123 @@
+body{
+	background-color: lightblue;
+	font-family: "Verdana", sans-serif;
+	font-size: 13px;
+	line-height: 30px;
+}
+
+#mainHeader h1{
+	text-align:center;
+}
+
+#mainBody{
+	margin:10%;
+	background-color: #EEE;
+	padding:40px;
+	border-radius: 10px;
+	margin-top: 0px
+}
+
+#description{
+	text-align:center;
+}
+
+#survey-form{
+	display:grid;
+	grid-template-areas:
+	'namel name'
+	'emaill email'
+	'agel age'
+	'rolel role'
+	'radiol radio'
+	'likel like'
+	'improvel improve'
+	'commentsl comments'
+	'submit submit';
+	grid-template-columns:repeat(2,1fr);
+	grid-gap: 20px;
+}
+
+#name-label{
+	grid-area:namel;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#name{
+	grid-area:name;
+}
+
+#email-label{
+	grid-area:emaill;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#email{
+	grid-area:email;
+}
+
+#number-label{
+	grid-area:agel;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#number{
+	grid-area:age;
+}
+
+#dropdown-label{
+	grid-area:rolel;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#dropdown{
+	grid-area:role;
+}
+
+#radio-label{
+	grid-area:radiol;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#radio{
+	grid-area:radio;
+}
+
+#dropdown-label2{
+	grid-area:likel;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#dropdown2{
+	grid-area:like;
+}
+
+#checkbox-label{
+	grid-area:improvel;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#checkbox{
+	grid-area:improve;
+}
+
+#text-label{
+	grid-area:commentsl;
+	justify-self:stretch;
+	text-align: right; 
+}
+
+#text{
+	grid-area:comments;
+}
+
+#submit{
+	grid-area:submit;
+	justify-self:center;
+}

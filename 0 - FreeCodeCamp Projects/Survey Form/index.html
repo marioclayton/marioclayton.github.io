@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<header id="mainHeader">
+		<h1 id="title">Survey Form</h1>
+	</header>
+	<main id="mainBody">
+		<p id="description">
+			Lorem ipsum commodo et proident elit exercitation.
+		</p>
+		<form id="survey-form">
+			
+			<label for="name" id="name-label">*Name: </label><input type="text" name="name" id="name" placeholder="Enter name" required><br>
+  			
+  			<label for="email" id="email-label">*Email: </label><input type="email" name="email" id="email" placeholder="Enter email" required><br>
+  			
+  			<label for="number" id="number-label">*Age: </label><input type="number" name="age" id="number" min="10" max="100" placeholder="Enter age" required><br>
+			
+			<label for="dropdown" id="dropdown-label">Which option best describes your current role? </label>
+			<select name="role" id="dropdown">
+				<option value="student">Student</option>
+				<option value="fullTimeJob">Full Time Job</option>
+				<option value="fullTimeLearner">Full Time Learner</option>
+				<option value="preferNotToSay">Prefer not to say</option>
+				<option value="other">Other</option>
+			</select><br>
+
+			<label for="radio" id="radio-label">How likely is that you would recommend freeCodeCamp to a friend?</label>
+			<div id="radio">
+				<input type="radio" name="radio" value="Definetely">Definetely</input><br>
+				<input type="radio" name="radio" value="Maybe">Maybe</input><br>
+				<input type="radio" name="radio" value="Not Sure">Not Sure</input>
+			</div>
+
+			<label for="dropdown2" id="dropdown-label2">What do you like most in FCC: </label>
+			<select name="role" id="dropdown2">
+				<option value="challenges">Challeneges</option>
+				<option value="projects">Projects</option>
+				<option value="community">Community</option>
+				<option value="openSource">Open source</option>
+			</select><br>
+
+			<label for="checkbox" id="checkbox-label">Things that should be improved in the future (Check all that apply): </label>
+			<div id="checkbox">
+				<input type="checkbox" name="checkbox" value="front-endProjects">Front-end Projects</input><br>
+				<input type="checkbox" name="checkbox" value="back-endProjects">Back-end Projects</input><br>
+				<input type="checkbox" name="checkbox" value="dataVisualization">Data Visualization</input><br>
+				<input type="checkbox" name="checkbox" value="challenges">Challenges</input><br>
+				<input type="checkbox" name="checkbox" value="openSourceCommunity">Open Source Community</input><br>
+				<input type="checkbox" name="checkbox" value="gitterHelpRooms">Gitter help rooms</input><br>
+				<input type="checkbox" name="checkbox" value="videos">Videos</input><br>
+				<input type="checkbox" name="checkbox" value="cityMeetups">City Meetups</input><br>
+				<input type="checkbox" name="checkbox" value="wiki">Wiki</input><br>
+				<input type="checkbox" name="checkbox" value="forums">Forums</input><br>
+				<input type="checkbox" name="checkbox" value="additionalCourses">Additional Courses</input>
+			</div>
+
+			<label for="text" id="text-label">Any Comments or Suggestions?</label>
+			<textarea name="comments" rows="10" col="30" id="text"></textarea><br>
+
+  			<input type="submit" value="Submit" id="submit">
+		</form>
+	</main>
+</body>
+</html>

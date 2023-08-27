@@ -1,0 +1,309 @@
+*{
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+	background-color: rgb(240, 240, 240);
+}
+
+/*Header*/
+
+#header{
+	height:60px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	background-color: white;
+	top: 0;
+	left: 0;
+}
+
+/*Brand*/
+
+#brand{
+	height: 100%;
+	width: 33%;
+}
+
+#header-img{
+	display: block;
+	height: 100%;
+	margin: auto;
+}
+
+/*Navbar*/
+
+#button{
+	display: none;
+}
+
+#nav-bar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 67%;
+	height: 60px;
+}
+
+#menu{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#nav-bar li{
+	display: flex;
+}
+
+.nav-link{
+	font-size: 16px;
+	padding:20.8px 20px;
+	margin:0;
+	text-decoration: none;
+	color:black;
+	text-transform: uppercase;
+}
+
+.nav-link:hover{
+	background-color: rgb(255, 230, 230);
+}
+
+/*Form Section*/
+
+#form{
+	height: 100vh;
+	position: relative;
+}
+
+#form-cont{
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	bottom: 0; 
+	right: 0;
+	margin:auto;
+	width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-cont h1{
+	font-weight: normal;
+	font-size: 30px;
+	text-align: center;
+	margin:20px;
+}
+
+#email{
+	width: 300px;
+	align-self: center;
+	margin:20px;
+	background-color: rgb(255, 230, 230);
+	border-style: none;
+	border-radius: 3px;
+	padding:15px 20px;
+	font-size: 20px;
+}
+
+#submit{
+	width: 150px;
+	align-self: center;
+	background-color: rgb(250, 200, 200);
+	border-style: none;
+	height: 30px;
+	border-radius: 3px;
+}
+
+/*Features Section*/
+
+#features{
+	padding:100px 20% 100px 20%;
+}
+
+.feature{
+	padding-bottom: 50px;
+}
+
+.feature h2{
+	margin-bottom: 10px;
+}
+
+/*Video Section*/
+
+#videoHolder{
+	position: relative;	
+	width: 50%;
+	margin: auto;
+	padding-top: 28.125%;
+}
+
+#video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width:100%;
+	padding-top: 100px;
+}
+
+/*Pricing Section*/
+
+#pricing{
+	display: flex;
+	justify-content: space-around;
+	padding:100px 20%;
+	flex-wrap: wrap;
+}
+
+#pricing h1{
+	padding:50px;
+	text-align: center;
+	width: 100%;
+}
+
+.box{
+	width: 200px;
+	background-color: rgb(255, 230, 230);
+	border-radius: 5px;
+	text-align: center;
+	margin: 15px;
+}
+
+.box h3{
+	background-color: rgb(250, 200, 200);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding:10px;
+}
+
+.price{
+	padding:10px;
+	font-weight: bold;
+}
+
+.box ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+}
+
+.box ul li{
+	padding: 5px;
+}
+
+.box input{
+	margin:10px;
+	background-color: rgb(250, 200, 200);
+	border-style: none;
+	height: 30px;
+	border-radius: 3px;
+}
+
+/*Footer*/
+
+#main-footer{
+	text-align: center;
+	background-color: white;
+	padding:20px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 900px){
+	/*Header*/
+
+	/*Brand*/
+
+	#brand{
+		width: 100%;
+	}
+
+	/*Navbar*/
+
+	#button{
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.line {
+	    width: 35px;
+	    height: 4px;
+	    background-color: black;
+	    margin: 6px auto;
+	}
+
+	#nav-bar{
+		top: 0;
+		right: 0;
+		width: 60px;
+		height: 100%;
+	}
+
+	#dropdown{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	ul#menu{
+		display: none;
+	}
+
+	#dropdown:hover ul#menu, #dropdown:focus ul#menu{
+		display: block;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		background-color: white;
+	}
+
+	#nav-bar li{
+		padding:0;
+		width: 200px;
+	}
+
+	.nav-link{
+		display: block;
+		width: 100%;
+	}
+
+	#form{
+		height: 100%;
+		position: static;
+		display: block;
+	}
+	#form-cont{
+		position: static;
+		margin:auto;
+		width: 100%;
+		padding: 20% 0;
+	}
+
+	#form-cont h1{
+		font-weight: normal;
+		font-size: 25px;
+		text-align: center;
+		margin:20px;
+		padding: 0 10%;
+	}
+	#features{
+		padding:100px 20% 50px 20%;
+	}
+	#videoHolder{
+		width: 80%;
+		padding-top: 45%;
+	}
+	#pricing{
+		padding:50px 25%
+		flex-wrap: wrap;
+	}
+}
